@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Fonts*/
+.brand-logo {
+    font-family: 'MuseoModerno';
+}
+
+.main-nav a, .section-title, .form-heading, .welcome h1,
+.footer-content p, .about p, .cta h1, .contact-header h2 {
+    font-family: 'Chivo', sans-serif;
+}
+
+.project p, .skills-list li, .button, .contact-desc, .footer-content input,
+.footer-content button, .skip, .cta p, input, textarea {
+    font-family: 'Archivo', sans-serif;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 48px;
+}
+
+.brand-logo {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #928DD3;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 72px;
+    margin: 0;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h1 {
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 120px;
+    width: 95vw;
+    text-align: center;
+    margin: 30px 20px;
+    padding: 0;
+}
+
+.welcome img {
+    width: 95vw;
+    border-radius: 22px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Projects Section */
+.projects.section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 95vw;
+}
+
+.project {
+    width: 100%;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.project p {
+    padding-left: 5px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.sub-description {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+}
+
+/* Skills Section */
+.skills.section {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 32px 48px;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -4px;
+}
+
+.skills-list-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    flex: 1;
+}
+
+.skills-list {
+    font-weight: 500;
+    margin-bottom: 20px;
+    list-style: none;
+    gap: 32px;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+}
+
+.skills-list li {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.skills-list:nth-child(1) {
+    margin-right: 170px;
+}
+
+.skills-list:nth-child(2) {
+    margin-right: 140px;
+}
+
+/* About Section */
+.about p {
+    font-weight: 900;
+    max-width: 900px;
+    margin: 0 0 30px 0;
+    text-align: left;
+    font-size: 64px;
+    line-height: 68px;
+    padding-left: 48px;
+}
+
+.about img {
+    width: 95vw;
+    height: auto;
+    border-radius: 22px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* CTA Section */
+.cta {
+    margin: 200px auto;
+}
+.cta h1 {
+    font-size: 64px;
+}
+
+.cta p {
+    font-size: 24px;
+}
+
+.cta button {
+    border-radius: 22px;
+    font-size: 20px;
+    margin: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Contact Intro Section */
+.contact-intro {
+    padding: 0;
+    margin: 0;
+}
+
+.section-title{
+    font-size: 48px;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 48px;
+    margin: 0 48px;
+}
+
+/* Contact Form Section */
+.contact.section {
+    padding-top: 72px;
+    margin: 240px 0;
+}
+
+.contact .section-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 64px;
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
+}
+
+.contact-desc {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    max-width: 636px;
+    text-align: left;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.form-heading {
+    font-size: 28px;
+    font-weight: 700;
+    height: 32px;
+    width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.skip {
+    margin-top: 1rem;
+    color: #928DD3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Form Elements */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+/* OTP Inputs */
+.otp {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+}
+
+.otp input[type="number"] {
+    width: 56px;
+    height: 64px;
+    border-radius: 22px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    appearance: none;
+    padding: 0;
+}
+
+input[type = "number"]::placeholder{
+    text-align: center;
+    padding: 19px;
+}
+
+/* Common Components */
+button, .button {
+    background-color: #928DD3;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button {
+    width: 400px;
+    height: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 12px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover, button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content{
+    margin: 100px 0px;
+}
+
+.footer-content p{
+    font-weight: 900;
+    font-size: 34px;
+}
+
+.footer-content input{
+    width: 462px;
+    height: 40px;
+    border-radius: 22px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 24px 10px 24px 0;
+}
+
+.footer-content button{
+    height: 40px;
+    border-radius: 22px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* effects */
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .main-nav a {
+        font-size: 20px;
+    }
+
+    .welcome {
+        padding: 30px;
+    }
+
+    .welcome h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+
+    .skills.section {
+        padding: 20px;
+    }
+
+    .skills-list-container {
+        flex-direction: column;
+    }
+
+    .skills-list:nth-child(1),
+    .skills-list:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .about p {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 20px;
+    }
+
+    .contact-header {
+        flex-direction: column;
+        padding: 30px;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .form-heading {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .footer-content input {
+        width: 100%;
+        margin: 24px 0;
+    }
+
+    .footer-content button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .welcome h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about p {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    .footer-content input {
+        width: 300px;
+    }
+}
